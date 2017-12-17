@@ -1,0 +1,120 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+        	<div class="quick_contact">
+        		<table class="marginCenter">
+        			<tr>
+        				<td>Contact:</td>
+        				<td>Shop #: (619)-474-4218</td> 
+        				<td>Cell #: (619)-339-3502</td>
+        				<td>Address: 1803 Highland Ave, National City, CA 91950 </td>
+        			</tr>
+        		</table>
+        	</div>
+            <div class="imgContainer">
+        		<img src="image/highlandstation_front_crop.jpg" id="imgbackground">
+        		<div class="headerInner">
+                	<h1 class="textCenter">Highland Service Station</h1>
+                	<table class="marginCenter">
+                		<tr>
+                			<td class="tableList" onClick="homeFunction()"> Home </td>
+                			<td class="tableList" onClick="locationFunction()"> Location </td>
+                			<td class="tableList" onClick="webToolsFunction()"> <b>Web Tools</b> </td>
+                			<td class="tableList" onClick="programsFunction()"> Programs </td>
+                		</tr>
+                	</table>
+            	</div>
+        	</div>
+        </div>
+        <div class="webTools">
+        	<h1 class="textCenter">Web Tools</h1>
+        	<p>
+        		Here are a list of online tools that you may find useful. Each sites has a different purpose such as finding aftermarket parts for a specific car model or to...
+        	</p>
+        	<table class="webTools">
+        		<tr>
+        			<td> <a href="https://ssl.arb.ca.gov/PartsSearchTool/CatalystSearchTool.aspx">CA.gov Catalytic Converter Database </a></td>
+        			<td> Here is a government website where you can find aftermarket catalytic converters. </td>
+        		</tr>
+        		<tr>
+        			<td><a href="http://www.magnaflow.com/catalytic-converters"> Magnaflow Catalytic Converter Database </a></td>
+        			<td>
+        				...
+        			</td>
+        		</tr>
+        		<tr>
+        			<td><a href="http://www.walkerexhaust.com/"> Walker Exhaust Emissions Control</a></td>
+        			<td>
+        				...
+        			</td>
+        		</tr>
+        		<tr>
+        			<td><a href="http://www.catcoglobal.com/catalogs.html"> Catco Catalogs</a></td>
+        			<td>
+        				...
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>
+        				<a href="https://dtips.azurewebsites.net/">D Tips Tools</a>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td> <a href="https://www.bar.ca.gov/pubwebquery/vehicle/pubtstqry.aspx"> CA.gov Vehicle Test History </a> </td>
+        			<td>...</td>
+        		</tr>
+        		<tr>
+        			<td><a href="https://www.identifix.com/"> Identiflix </a></td>
+        			<td> ...</td>
+        		</tr>
+        		<tr>
+        			<td><a href="http://www.starcertifiedsmogchecks.com/">Star Testing Report Card</a></td>
+        			<td>...</td>
+        		</tr>
+        	</table>
+
+        </div>
+        <div class="footerContainer">
+        	.
+        	<div class="footer">
+	        	Business Hours: Monday-Friday: 8am - 6pm <br>
+	        	Address: 1803 Highland Ave, National City, CA 91950 <br>
+	        	Shop #: (619)-474-4218 - Cell #: (619)-339-3502 
+        	</div>
+        </div>
+
+        <script type="text/javascript">
+        	document.getElementById('imgbackground').setAttribute("style","width:100%");
+        	 function homeFunction() {
+                window.location = "index.html";
+            }
+             function locationFunction() {
+                window.location = "location.html";
+            }
+             function webToolsFunction() {
+                window.location = "webTools.html";
+            }
+             function programsFunction() {
+                window.location = "programs.html";
+            }
+            //map
+            function initMap() {
+		        var uluru = {lat: 32.669547, lng: -117.094850};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 13,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		    }
+        </script>
+        <script async defer
+	    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFEUJ1z0xcrIpUkceijKadbdbRN6EOB5I&callback=initMap">
+	    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+<head>
+<title> Highland </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+        <div class="header">
+        	<div class="quick_contact">
+        		<table class="marginCenter">
+        			<tr>
+        				<td>Contact:</td>
+        				<td>Shop #: (619)-474-4218</td> 
+        				<td>Cell #: (619)-339-3502</td>
+        				<td>Address: 1803 Highland Ave, National City, CA 91950 </td>
+        			</tr>
+        		</table>
+        	</div>
+            <div class="imgContainer">
+        		<img src="image/highlandstation_front_crop.jpg" id="imgbackground">
+        		<div class="headerInner">
+                	<h1 class="textCenter">Highland Service Station</h1>
+                	<table class="marginCenter">
+                		<tr>
+                			<td class="tableList" onClick="homeFunction()"> Home </td>
+                			<td class="tableList" onClick="locationFunction()"> <b>Location</b> </td>
+                			<td class="tableList" onClick="webToolsFunction()"> Web Tools </td>
+                			<td class="tableList" onClick="programsFunction()"> Programs </td>
+                		</tr>
+                	</table>
+            	</div>
+        	</div>
+        </div>
+        <div class="location">
+        	<h1 class="textCenter">Location</h1> 
+            <hr>
+        	<div id="map"></div>
+            <br>
+        	The Mechanic Shop has a gas station and is located near many restaurants. We are next to a Wienerschnitzel and across the street from a Jack In The Box. There is also a family Mexican restaurant and El Pollo Loco near by.
+
+            <h3> Convenience Store </h3>
+            <table>
+                <tr>
+                    <td>On sight there is a small retail business that stocks items from liquids such as water and Gatorade to snacks such as Chips, Beef Jerky, etc.</td>
+                    <td><img src="image/highland_store.jpg" class="imgMaxHeight imgFloatRight"></td>
+                </tr>
+            </table>
+            <h3> Gas Station </h3>
+            <table>
+                <tr>
+                    <td>On sight there is also a gas station. Gas prices will vary.</td>
+                    <td><img src="image/highland_gas_crop.jpg" class="imgMaxHeight imgFloatRight"></td>
+                </tr>
+            </table>
+            <h3> Car Wash </h3>
+            <table>
+                <tr>
+                    <td>On sight there is also a car wash.</td>
+                    <td><img src="image/highland_gas_crop.jpg" class="imgMaxHeight imgFloatRight"></td>
+                </tr>
+            </table>
+ 
+ 
+        </div>
+        <div class="footerContainer">
+        	.
+        	<div class="footer">
+	        	Business Hours: Monday-Friday: 8am - 6pm <br>
+	        	Address: 1803 Highland Ave, National City, CA 91950 <br>
+	        	Shop #: (619)-474-4218 - Cell #: (619)-339-3502 
+        	</div>
+        </div>
+
+        <script type="text/javascript">
+        	document.getElementById('imgbackground').setAttribute("style","width:100%");
+        	 function homeFunction() {
+                window.location = "index.html";
+            }
+             function locationFunction() {
+                window.location = "location.html";
+            }
+             function webToolsFunction() {
+                window.location = "webTools.html";
+            }
+             function programsFunction() {
+                window.location = "programs.html";
+            }
+            //map
+            function initMap() {
+		        var uluru = {lat: 32.669547, lng: -117.094850};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 13,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		    }
+        </script>
+        <script async defer
+	    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFEUJ1z0xcrIpUkceijKadbdbRN6EOB5I&callback=initMap">
+	    </script>
+</body>
+</html>

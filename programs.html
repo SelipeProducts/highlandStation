@@ -1,0 +1,93 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+        	<div class="quick_contact">
+        		<table class="marginCenter">
+        			<tr>
+        				<td>Contact:</td>
+        				<td>Shop #: (619)-474-4218</td> 
+        				<td>Cell #: (619)-339-3502</td>
+        				<td>Address: 1803 Highland Ave, National City, CA 91950 </td>
+        			</tr>
+        		</table>
+        	</div>
+            <div class="imgContainer">
+        		<img src="image/highlandstation_front_crop.jpg" id="imgbackground">
+        		<div class="headerInner">
+                	<h1 class="textCenter">Highland Service Station</h1>
+                	<table class="marginCenter">
+                		<tr>
+                			<td class="tableList" onClick="homeFunction()"> Home </td>
+                			<td class="tableList" onClick="locationFunction()"> Location </td>
+                			<td class="tableList" onClick="webToolsFunction()"> Web Tools </td>
+                			<td class="tableList" onClick="programsFunction()"> <b>Programs</b></td>
+                		</tr>
+                	</table>
+            	</div>
+        	</div>
+        </div>
+        <div class="programs">
+        	<h1 class="textCenter"> Consumer Assistance Program </h1>
+        	The Consumer Assistance Program (CAP) is a program administered by the California Bureau of Automotive Repair (Bar) to help people deal with their car's problem. The main goal of CAP is to help lower the amount of car's cuasing high emission. There are two different programs within CAP:  Repair Assistance and Vehicle Retirement. Repair Assistance allows eligibal customers who's cars fails a Smog Check to recieive a maximum of $500 in emission-related repairs at STAR certified stations (Yes we are STAR certified). If a customer believes the repairs are not worth investing in, then this customer may have the option to get rid of their vehical through the Vehicle Retirement Program allowing them to receive up to $1,500. Note both programs have different requirements for eligibility. More information can be found on the the programs official <a href="https://www.smogcheck.ca.gov/consumer/Consumer_Assistance_Program/index.html">Site</a>. 
+        	<h3 class="textCenter">Eligibility</h3>
+        	<h4> Repair Assistance </h4>
+        	To qualify your vehical must: have failed Smog Checks from previous years, not have modified systems, completed DMV registration (with all fees covered and expired registrations not being expired for more then 120 days), not be undergoing a transfer of ownership, be registered in the customers name (this means vehicles registered to businesses and non-profit organizations do not qualify), cannot have recieved CAP previous years, and the household income the is less then or equal to 225% of the federal poverty level. This is just a summary and you should ensure you qualify with official documentation.[<a href="https://www.smogcheck.ca.gov/pdf/RA_Requirements.pdf">English</a>] [<a href="https://www.smogcheck.ca.gov/pdf/RA_Eligibility_Requirements_SPANISH.pdf">Espanol</a>]
+        	<h4> Vehical Retirenment </h4>
+        	To qualify your vehical must: have previously been registered in California the past two years, must have failed its most recent Smog Check, not be going through initial registration, not be going through transfer of ownership, be registered in the customers name (this means vehicles registered to businesses and non-profit organizations do not qualify), not be dismantled or salvaged that hasnt re-registered with the DMV, completed DMV registration (with all fees covered and expired registrations not being expired for more then 120 days), and the vehicle must be a passenger vehicle, truck, SUV, or van (with gross weight less then 10,000 pounds).This is just a summary and you should ensure you qualify with official documentation.[<a href="https://www.smogcheck.ca.gov/pdf/VR_Requirements.pdf">English</a>] [<a href="https://www.smogcheck.ca.gov/pdf/VR_Eligibility_Requirements_SPANISH.pdf">Espanol</a>]
+        	
+        	<br><br>
+
+        	<div class="textCenter">
+        		Application Links:[<a href="https://www.smogcheck.ca.gov/CAPOnline/CAPApplicationOnline.aspx">English</a>] [<a href="https://www.smogcheck.ca.gov/CAPOnline/CAPApplicationOnlinesp.aspx">Espanol</a>] 
+        	</div>
+        		<iframe class="YTVideo" width="560" height="315" src="https://www.youtube.com/embed/NqobRosEZf4" frameborder="0" allowfullscreen align="middle"></iframe>
+        	<hr>
+        	<div class="couponCenter">	
+        		<h1 class="textCenter">Coupon</h1>
+        		<img src="image/smogCheck_coupon.jpg" class="imgCenter">
+        	</div>
+        </div>
+        <div class="footerContainer">
+        	.
+        	<div class="footer">
+	        	Business Hours: Monday-Friday: 8am - 6pm <br>
+	        	Address: 1803 Highland Ave, National City, CA 91950 <br>
+	        	Shop #: (619)-474-4218 - Cell #: (619)-339-3502 
+        	</div>
+        </div>
+
+        <script type="text/javascript">
+        	document.getElementById('imgbackground').setAttribute("style","width:100%");
+        	 function homeFunction() {
+                window.location = "index.html";
+            }
+             function locationFunction() {
+                window.location = "location.html";
+            }
+             function webToolsFunction() {
+                window.location = "webTools.html";
+            }
+             function programsFunction() {
+                window.location = "programs.html";
+            }
+            //google map
+            function initMap() {
+		        var uluru = {lat: 32.669547, lng: -117.094850};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 13,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		    }
+        </script>
+        <script async defer
+	    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFEUJ1z0xcrIpUkceijKadbdbRN6EOB5I&callback=initMap">
+	    </script>
+</body>
+</html>

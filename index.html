@@ -1,0 +1,81 @@
+<html>
+<head>
+<title> Highland </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+        <div class="header">
+        	<div class="quick_contact">
+        		<table class="marginCenter">
+        			<tr>
+        				<td>Contact:</td>
+        				<td>Shop #: (619)-474-4218</td> 
+        				<td>Cell #: (619)-339-3502</td>
+        				<td>Address: 1803 Highland Ave, National City, CA 91950 </td>
+        			</tr>
+        		</table>
+        	</div>
+            <div class="imgContainer">
+        		<img src="image/highlandstation_front_crop.jpg" id="imgbackground">
+        		<div class="headerInner">
+                	<h1 class="textCenter">Highland Service Station</h1>
+                	<table class="marginCenter">
+                		<tr>
+                			<td class="tableList" onClick="homeFunction()"> <b>Home</b> </td>
+                			<td class="tableList" onClick="locationFunction()"> Location </td>
+                			<td class="tableList" onClick="webToolsFunction()"> Web Tools </td>
+                			<td class="tableList" onClick="programsFunction()"> Programs </td>
+                		</tr>
+                	</table>
+            	</div>
+        	</div>
+        </div>
+        <div class="aboutUs"> 
+        	<h1 class="textCenter">About Us</h1>
+        	The Highland Service Station is a mechanic shop located in National City. For the past 7 years the lead meachanic, Cesar Lopez, has been providing customers with high quality repair services between Highland Avenue and E 18th Street. Some of these services include:
+        	<ul>
+        		<li> Smog Checks</li>
+        		<li> Maintenance Services</li>
+        		<li> Check Engine Light Specialist </li>
+        		<li> Tire Repair and Replacement </li>
+        		<li> Wheel Balancing </li>
+        		<li> Strut Replacement </li>
+        		<li> Electrical Issues </li>
+        		<li> Starters / Altinators </li>
+        		<li> Radiators </li>
+        		<li> etc.</li>
+        	</ul>
+        	Having people certified in many areas is vital to not only provide a wide range of repair services, but to ensure a service is done properly. A few certifications and licences ensured at Highland Service Station include:
+        	<ul>
+        		<li>ASE</li>
+        		<li>Oriely</li>
+        		<li>NAPA</li>
+        		<li>etc.</li>
+        	</ul>
+        </div>
+        <div class="footerContainer">
+        	.
+        	<div class="footer">
+	        	Business Hours: Monday-Friday: 8am - 6pm <br>
+	        	Address: 1803 Highland Ave, National City, CA 91950 <br>
+	        	Shop #: (619)-474-4218 - Cell #: (619)-339-3502 
+        	</div>
+        </div>
+
+        <script type="text/javascript">
+        	document.getElementById('imgbackground').setAttribute("style","width:100%");
+        	 function homeFunction() {
+                window.location = "index.html";
+            }
+             function locationFunction() {
+                window.location = "location.html";
+            }
+             function webToolsFunction() {
+                window.location = "webTools.html";
+            }
+             function programsFunction() {
+                window.location = "programs.html";
+            }
+        </script>
+</body>
+</html>
